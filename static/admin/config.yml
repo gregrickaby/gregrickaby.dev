@@ -1,0 +1,23 @@
+# https://www.netlifycms.org/docs/add-to-your-site/
+
+backend:
+  name: github
+  branch: master # Branch to update (defaults to master)
+  repo: gregrickaby/gregrickaby.dev
+
+publish_mode: editorial_workflow # Adds an interface for drafting, reviewing, and approving posts.
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "/src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
