@@ -23,12 +23,14 @@ export default postLayout
 
 export const query = graphql`
   query PostQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date
-        slug
       }
     }
   }

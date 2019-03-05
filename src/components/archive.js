@@ -29,8 +29,8 @@ const Archive = () => (
           <h3>Archive</h3>
           <ArchiveList>
             {allMarkdownRemark.edges.map(edge => (
-              <li key={edge.node.frontmatter.slug}>
-                <Link to={`/posts${edge.node.frontmatter.slug}`}>
+              <li key={edge.node.fields.slug}>
+                <Link to={`/posts${edge.node.fields.slug}`}>
                   {edge.node.frontmatter.title}
                 </Link>
               </li>
@@ -52,12 +52,14 @@ const POST_ARCHIVE_QUERY = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
             date
             category
             description
-            slug
           }
         }
       }
