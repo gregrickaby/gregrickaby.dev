@@ -9,6 +9,7 @@ class postLayout extends Component {
     return (
       <Layout location={location}>
         <h1>{markdownRemark.frontmatter.title}</h1>
+        <img src={markdownRemark.frontmatter.thumbnail} />
         <div
           dangerouslySetInnerHTML={{
             __html: markdownRemark.html,
@@ -31,6 +32,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        thumbnail
       }
     }
   }
