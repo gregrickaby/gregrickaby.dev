@@ -72,8 +72,6 @@ const LISTING_QUERY = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            category
-            description
           }
         }
       }

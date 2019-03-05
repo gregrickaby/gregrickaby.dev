@@ -58,8 +58,6 @@ const POST_ARCHIVE_QUERY = graphql`
           frontmatter {
             title
             date
-            category
-            description
           }
         }
       }
