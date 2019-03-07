@@ -9,7 +9,10 @@ class postLayout extends Component {
     return (
       <Layout location={location}>
         <h1>{markdownRemark.frontmatter.title}</h1>
-        <img src={markdownRemark.frontmatter.thumbnail} />
+        <img
+          src={markdownRemark.frontmatter.thumbnail}
+          alt={markdownRemark.frontmatter.title}
+        />
         <div
           dangerouslySetInnerHTML={{
             __html: markdownRemark.html,
