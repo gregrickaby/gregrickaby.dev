@@ -7,7 +7,11 @@ const HeaderWrapper = styled.div`
   background: #000000;
 
   h1 {
-    margin: 0;
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    color: #fff;
   }
 `
 const HeaderContainer = styled.div`
@@ -15,7 +19,7 @@ const HeaderContainer = styled.div`
   padding: 1rem;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, siteDescription }) => (
   <HeaderWrapper>
     <HeaderContainer>
       <h1>
@@ -29,16 +33,19 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <p>{siteDescription}</p>
     </HeaderContainer>
   </HeaderWrapper>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  siteDescription: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  siteDescription: ``,
 }
 
 export default Header
