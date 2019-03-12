@@ -15,6 +15,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/images/uploads/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        cmsConfig: `/static/admin/config.yml`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -31,13 +51,6 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/posts/`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         // CommonMark mode (default: true)
@@ -49,7 +62,22 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+        plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              backgroundColor: "transparent",
+            },
+          },
+        ],
       },
     },
     {

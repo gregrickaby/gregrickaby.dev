@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Layout from "./layout"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 class postLayout extends Component {
   render() {
@@ -9,9 +10,8 @@ class postLayout extends Component {
     return (
       <Layout location={location}>
         <h1>{markdownRemark.frontmatter.title}</h1>
-        <img
-          src={markdownRemark.frontmatter.thumbnail}
-          alt={markdownRemark.frontmatter.title}
+        <Img
+          fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
         />
         <div
           dangerouslySetInnerHTML={{
@@ -35,7 +35,13 @@ export const query = graphql`
       frontmatter {
         title
         date
-        thumbnail
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 630) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

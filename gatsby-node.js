@@ -1,5 +1,10 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
+
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node)
+}
 
 // Register the Netlify CMS slug.
 exports.onCreateNode = ({ node, actions, getNode }) => {
