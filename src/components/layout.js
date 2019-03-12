@@ -36,6 +36,7 @@ const Layout = ({ children, location }) => (
         site {
           siteMetadata {
             title
+            description
           }
         }
         file(relativePath: { regex: "/bg/" }) {
@@ -49,7 +50,10 @@ const Layout = ({ children, location }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
+        />
 
         <div style={{}}>
           <Spring
@@ -68,9 +72,16 @@ const Layout = ({ children, location }) => (
             <Archive />
           </MainLayout>
           <FooterLayout>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <p>
+              © {new Date().getFullYear()}{" "}
+              <a href="https://gregrickaby.com">Greg Rickaby</a> | Powered by{" "}
+              <a href="https://gatsbyjs.org">Gatsby</a>,{" "}
+              <a href="https://www.netlifycms.org/">NetlifyCMS</a>,{" "}
+              <a href="https://github.com/gregrickaby/gregrickaby.dev">
+                Github
+              </a>{" "}
+              and hosted at <a href="https://netlify.com">Netlify</a>.
+            </p>
           </FooterLayout>
         </div>
       </>
