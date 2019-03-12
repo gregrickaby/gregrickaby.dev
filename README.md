@@ -10,4 +10,4 @@ The `.dev` TLD is going give me an opportunity to offload all my development foc
 
 ## Powered by
 
-This blog is powered by [Gatsby](https://gatsbyjs.org) & [WordPress](https://wordpress.org) and hosted at [Netflify](https://netlify.com).
+This blog is powered by [Gatsby](https://gatsbyjs.org), [NetlifyCMS](https://www.netlifycms.org/), [Github](https://github.com/gregrickaby/gregrickaby.dev) and hosted at [Netlify](https://netlify.com).
