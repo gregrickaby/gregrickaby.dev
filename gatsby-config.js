@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Greg Rickaby Development`,
-    description: `Greg Rickaby - Web Developer`,
+    title: `Modern development blog`,
+    description: `A journey away from WordPress`,
     author: `@gregrickaby`,
     siteUrl: `https://gregrickaby.dev/`,
   },
