@@ -15,3 +15,5 @@ WordPress has put food on my table since 2011. I'm not used to breaking changes 
 It's true, I could have just rolled back to 2.1.20 and then wrote the blog post, but I spent that 30-minutes trying to figure out what broke. Finally, I went to Github to create a ticket only to find [I wasn't the only one](https://github.com/gatsbyjs/gatsby/issues/12446).
 
 Luckily, the folks from Gatsby were all over it-- and had a fix later in the day (which is incredible) but what's the real solution? Should I be slower to update packages? Or should the maintainer be slower to push point releases?
+
+_Photo by Jason Hafso on Unsplash_
