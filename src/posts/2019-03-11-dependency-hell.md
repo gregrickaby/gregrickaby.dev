@@ -10,7 +10,7 @@ I like to stay up-to-date and keep packages current. When I sat down, I punched 
 
 > You see, my dev time on the weekends is precious (👋hi, father of 3 here) so I was really pissed when I couldn't write my blog post.
 
-WordPress has put food on my table since 2011. I'm not used to breaking changes with minor releases, and this sort of "dependency hell" makes the transition away WordPress harder. 
+WordPress has put food on my table since 2011. I'm not used to breaking changes with minor releases, and this "[dependency hell](https://en.wikipedia.org/wiki/Dependency_hell)" makes the transition away WordPress harder. 
 
 It's true, I could have just rolled back to 2.1.20 and then wrote the blog post, but I spent that 30-minutes trying to figure out what broke. Finally, I went to Github to create a ticket only to find [I wasn't the only one](https://github.com/gatsbyjs/gatsby/issues/12446).
 
