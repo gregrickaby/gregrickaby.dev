@@ -10,6 +10,6 @@ On this blog, I'm using NetlifyCMS with a "thumbnail" widget (that means custom 
 
 With the help of Josef's [blog post](https://blog.rousek.name/2018/08/10/cool-image-loading-with-gatsbyjs-v2-and-netlify-cms-v2/) and [this issue](https://github.com/gatsbyjs/gatsby/issues/5990) on Github, I was able to pass along my thumbnail data to Gatsby and leverage the awesome [gatsby-image](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-image) plugin! 🙌
 
-I lumped all [the solution](https://github.com/gregrickaby/gregrickaby.dev/tree/4686655477e192ea85a8719db51c5d17f9088c31) into a [single commit](https://github.com/gregrickaby/gregrickaby.dev/commit/4686655477e192ea85a8719db51c5d17f9088c31) so I could share!
+I wanted to share, so I lumped [the solution](https://github.com/gregrickaby/gregrickaby.dev/tree/4686655477e192ea85a8719db51c5d17f9088c31) into a [single commit](https://github.com/gregrickaby/gregrickaby.dev/commit/4686655477e192ea85a8719db51c5d17f9088c31). Hope this helps! ☺️
 
 _Photo by Olav Tvedt on Unsplash_
