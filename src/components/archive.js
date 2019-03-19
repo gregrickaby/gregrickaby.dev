@@ -20,22 +20,44 @@ const ArchiveList = styled.ul`
   }
 `
 
+const Avatar = {
+  borderRadius: "50%",
+  height: "50%",
+  width: "100%",
+}
+
+const Bio = styled.p``
+
 const Archive = () => (
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <>
         <aside>
-          <h3>Archive</h3>
-          <ArchiveList>
-            {allMarkdownRemark.edges.map(edge => (
-              <li key={edge.node.fields.slug}>
-                <Link to={`/posts${edge.node.fields.slug}`}>
-                  {edge.node.frontmatter.title}
-                </Link>
-              </li>
-            ))}
-          </ArchiveList>
+          <div>
+            <h3>About</h3>
+            <img
+              style={Avatar}
+              src="https://avatars3.githubusercontent.com/u/200280?s=460&v=4"
+              alt="A photo of Greg"
+            />
+            <Bio>
+              Greg Rickaby is a husband, father, the Director of Engineering at
+              WebDevStudios, and Author & Tech Editor for For Dummies.
+            </Bio>
+          </div>
+          <div>
+            <h3>Archive</h3>
+            <ArchiveList>
+              {allMarkdownRemark.edges.map(edge => (
+                <li key={edge.node.fields.slug}>
+                  <Link to={`/posts${edge.node.fields.slug}`}>
+                    {edge.node.frontmatter.title}
+                  </Link>
+                </li>
+              ))}
+            </ArchiveList>
+          </div>
         </aside>
       </>
     )}
