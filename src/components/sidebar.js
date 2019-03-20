@@ -26,7 +26,9 @@ const Avatar = {
   width: "100%",
 }
 
-const Bio = styled.p``
+const Bio = styled.p`
+  font-family: sans-serif;
+`
 
 const Archive = () => (
   <StaticQuery
@@ -39,11 +41,11 @@ const Archive = () => (
             <img
               style={Avatar}
               src="https://avatars3.githubusercontent.com/u/200280?s=460&v=4"
-              alt="A photo of Greg"
+              alt="Greg"
             />
             <Bio>
-              Greg Rickaby is a husband, father, the Director of Engineering at
-              WebDevStudios, and Author & Tech Editor for For Dummies.
+              Husband, father, the Director of Engineering at WebDevStudios, and
+              Author & Tech Editor for For Dummies.
             </Bio>
           </div>
           <div>
