@@ -13,7 +13,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import { Spring } from "react-spring/renderprops"
 import Header from "./header"
-import Archive from "./archive"
+import Sidebar from "./sidebar"
 import "./layout.css"
 
 const MainLayout = styled.main`
@@ -69,7 +69,7 @@ const Layout = ({ children, location }) => (
 
           <MainLayout>
             <div>{children}</div>
-            <Archive />
+            <Sidebar />
           </MainLayout>
           <FooterLayout>
             <p>
