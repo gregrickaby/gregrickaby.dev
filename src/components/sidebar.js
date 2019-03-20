@@ -30,7 +30,7 @@ const Bio = styled.p`
   font-family: sans-serif;
 `
 
-const Archive = () => (
+const Sidebar = () => (
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
@@ -66,7 +66,7 @@ const Archive = () => (
   />
 )
 
-export default Archive
+export default Sidebar
 
 const POST_ARCHIVE_QUERY = graphql`
   query BlogPostArchive {
