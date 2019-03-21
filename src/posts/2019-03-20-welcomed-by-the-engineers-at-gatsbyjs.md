@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Welcomed by the engineers at GatsbyJS
+title: Welcomed by the devs at GatsbyJS
 date: 2019-03-21T02:29:01.679Z
 thumbnail: /images/uploads/nikolay-tarashchenko-1327004-unsplash.jpg
 ---
