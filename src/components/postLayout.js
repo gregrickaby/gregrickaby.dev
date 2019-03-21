@@ -18,7 +18,8 @@ const postContent = ({ className, content }) => (
 )
 
 const StyledContent = styled(postContent)`
-  max-width: 730px;
+  padding: 20px;
+  max-width: 740px;
   margin: 0 auto;
 
   p,
@@ -41,6 +42,20 @@ const StyledContent = styled(postContent)`
 
     &:hover {
       color: #000c;
+    }
+  }
+
+  blockquote {
+    background: linear-gradient(0.38turn,rgb(248, 248, 248) 0%,rgb(255, 255, 255) 100%);
+    padding: 24px 24px 24px 60px;
+    margin-left: -64px;
+    width: calc(100% + 128px);
+
+    p {
+      color: #000000b3;
+      font-size: 26px;
+      letter-spacing: -.012em;
+      line-height: 1.48;
     }
   }
 `
