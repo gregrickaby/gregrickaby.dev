@@ -4,8 +4,19 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-const ImageLayout = styled.div`
+const PostTitle = styled.h1`
+  color: #000c;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0;
+  line-height: 1.25em;
   margin-bottom: 48px;
+`
+
+const ImageLayout = styled.div`
+  margin-bottom: 30px;
 `
 
 const postContent = ({ className, content }) => (
@@ -29,7 +40,7 @@ const StyledContent = styled(postContent)`
     color: #000c;
     font-feature-settings: "liga";
     font-size: 21px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    font-family: Georgia, "Times New Roman", Times, serif;
     letter-spacing: -0.0666667px;
     line-height: 33.1833px;
     overflow-wrap: break-word;
@@ -46,7 +57,11 @@ const StyledContent = styled(postContent)`
   }
 
   blockquote {
-    background: linear-gradient(0.38turn,rgb(248, 248, 248) 0%,rgb(255, 255, 255) 100%);
+    background: linear-gradient(
+      0.38turn,
+      rgb(248, 248, 248) 0%,
+      rgb(255, 255, 255) 100%
+    );
     padding: 24px 24px 24px 60px;
     margin-left: -64px;
     width: calc(100% + 128px);
@@ -54,7 +69,7 @@ const StyledContent = styled(postContent)`
     p {
       color: #000000b3;
       font-size: 26px;
-      letter-spacing: -.012em;
+      letter-spacing: -0.012em;
       line-height: 1.48;
     }
   }
@@ -66,7 +81,7 @@ class postLayout extends Component {
     const { location } = this.props
     return (
       <Layout location={location}>
-        <h1>{markdownRemark.frontmatter.title}</h1>
+        <PostTitle>{markdownRemark.frontmatter.title}</PostTitle>
         <ImageLayout>
           <Img
             fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
