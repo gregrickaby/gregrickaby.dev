@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
-  background: #000000;
+  background: #111;
   margin-bottom: 48px;
 
   h1 {
@@ -16,8 +16,7 @@ const HeaderWrapper = styled.div`
   }
 `
 const HeaderContainer = styled.div`
-  max-width: 90%;
-  padding: 1rem;
+  padding: 48px;
 `
 
 const Header = ({ siteTitle, siteDescription }) => (

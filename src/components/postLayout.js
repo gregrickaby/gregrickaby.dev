@@ -7,9 +7,6 @@ import styled from "styled-components"
 const PostTitle = styled.h1`
   color: #000c;
   font-size: 46px;
-  font-style: normal;
-  font-weight: 400;
-  font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0;
   line-height: 1.25em;
   margin-bottom: 48px;

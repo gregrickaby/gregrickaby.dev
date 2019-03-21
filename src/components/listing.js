@@ -24,13 +24,13 @@ const Post = styled.article`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 21px;
   }
 
   .read-more {
     color: #333333;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
     text-decoration: underline;
   }
 `

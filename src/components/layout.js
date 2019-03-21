@@ -23,8 +23,20 @@ const MainLayout = styled.main`
 `
 
 const FooterLayout = styled.footer`
+  background: #111;
+  padding: 48px;
   margin: 0 auto;
-  max-width: 90%;
+
+  p,
+  a {
+    color: #fff;
+    font-family: sans-serif;
+    transition: color 0.1s ease-in-out;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
 `
 
 const Layout = ({ children, location }) => (
