@@ -18,8 +18,31 @@ const postContent = ({ className, content }) => (
 )
 
 const StyledContent = styled(postContent)`
-  font-size: 18px;
-  max-width: 640px;
+  max-width: 730px;
+  margin: 0 auto;
+
+  p,
+  ul,
+  ol {
+    -moz-osx-font-smoothing: grayscale;
+    color: #000c;
+    font-feature-settings: "liga";
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    letter-spacing: -0.0666667px;
+    line-height: 33.1833px;
+    overflow-wrap: break-word;
+    text-rendering: optimizelegibility;
+  }
+
+  a {
+    color: #000299cc;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: #000c;
+    }
+  }
 `
 
 class postLayout extends Component {
