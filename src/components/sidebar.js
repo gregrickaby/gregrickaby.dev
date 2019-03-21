@@ -9,6 +9,21 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
+const AsideLayout = styled.aside`
+  font-family: sans-serif;
+  font-size: 15px;
+`
+
+const Widget = styled.div``
+
+const Avatar = {
+  borderRadius: "50%",
+  height: "auto",
+  maxWidth: "70%",
+}
+
+const Bio = styled.p``
+
 const ArchiveList = styled.ul`
   list-style: none;
   margin: 0;
@@ -16,18 +31,7 @@ const ArchiveList = styled.ul`
 
   a {
     color: #000000;
-    font-family: sans-serif;
   }
-`
-
-const Avatar = {
-  borderRadius: "50%",
-  height: "50%",
-  width: "100%",
-}
-
-const Bio = styled.p`
-  font-family: sans-serif;
 `
 
 export default () => (
@@ -35,8 +39,8 @@ export default () => (
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <>
-        <aside>
-          <div>
+        <AsideLayout>
+          <Widget>
             <h3>About</h3>
             <img
               style={Avatar}
@@ -44,11 +48,12 @@ export default () => (
               alt="Greg"
             />
             <Bio>
-              Husband, father, the Director of Engineering at WebDevStudios, and
-              Author & Tech Editor for For Dummies.
+              Director of Engineering at WebDevStudios. Author/Tech Editor "For
+              Dummies" brand under John Wiley & Sons, Inc.
             </Bio>
-          </div>
-          <div>
+          </Widget>
+
+          <Widget>
             <h3>Archive</h3>
             <ArchiveList>
               {allMarkdownRemark.edges.map(edge => (
@@ -59,8 +64,8 @@ export default () => (
                 </li>
               ))}
             </ArchiveList>
-          </div>
-        </aside>
+          </Widget>
+        </AsideLayout>
       </>
     )}
   />
