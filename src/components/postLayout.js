@@ -2,6 +2,25 @@ import React, { Component } from "react"
 import Layout from "./layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from "styled-components"
+
+const ImageLayout = styled.div`
+  margin-bottom: 48px;
+`
+
+const postContent = ({ className, content }) => (
+  <div
+    className={className}
+    dangerouslySetInnerHTML={{
+      __html: content,
+    }}
+  />
+)
+
+const StyledContent = styled(postContent)`
+  font-size: 18px;
+  max-width: 640px;
+`
 
 class postLayout extends Component {
   render() {
@@ -10,14 +29,12 @@ class postLayout extends Component {
     return (
       <Layout location={location}>
         <h1>{markdownRemark.frontmatter.title}</h1>
-        <Img
-          fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
-        />
-        <div
-          dangerouslySetInnerHTML={{
-            __html: markdownRemark.html,
-          }}
-        />
+        <ImageLayout>
+          <Img
+            fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
+          />
+        </ImageLayout>
+        <StyledContent content={markdownRemark.html} />
       </Layout>
     )
   }
