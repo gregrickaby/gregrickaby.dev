@@ -9,9 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import styled from "styled-components"
-import { Spring } from "react-spring/renderprops"
 import Header from "./header"
 import Sidebar from "./sidebar"
 import "./layout.css"
@@ -39,13 +37,6 @@ const Layout = ({ children, location }) => (
             description
           }
         }
-        file(relativePath: { regex: "/bg/" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
       }
     `}
     render={data => (
@@ -56,17 +47,6 @@ const Layout = ({ children, location }) => (
         />
 
         <div style={{}}>
-          <Spring
-            from={{ height: location.pathname === "/" ? 100 : 200 }}
-            to={{ height: location.pathname === "/" ? 200 : 100 }}
-          >
-            {styles => (
-              <div style={{ overflow: "hidden", ...styles }}>
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </div>
-            )}
-          </Spring>
-
           <MainLayout>
             <div>{children}</div>
             <Sidebar />
