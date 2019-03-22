@@ -5,17 +5,22 @@ import styled from "styled-components"
 const Post = styled.article`
   border-radius: 4px;
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.05);
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin: 24px 0;
+  padding: 24px;
 
   a {
-    color: #000000;
+    color: #000c;
     text-decoration: none;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: #bc0ce8;
+    }
   }
 
   time {
-    font-size: 0.8rem;
-    padding: 0.5rem 0;
+    font-size: 14px;
+    padding: 12px 0;
     display: block;
   }
 
@@ -28,10 +33,15 @@ const Post = styled.article`
   }
 
   .read-more {
-    color: #333333;
+    color: #bc0ce8;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
     text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: #000c;
+    }
   }
 `
 
