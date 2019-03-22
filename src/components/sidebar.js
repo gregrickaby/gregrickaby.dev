@@ -10,9 +10,10 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
 const AsideLayout = styled.aside`
+  margin-top: 36px;
   color: #000c;
   font-size: 15px;
-  line-height: 1rem;
+  line-height: 1.3;
 
   a {
     color: #bc0ce8;

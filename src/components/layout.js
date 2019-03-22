@@ -16,10 +16,10 @@ import "./layout.css"
 
 const MainLayout = styled.main`
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 48px;
   grid-template-columns: 4fr 1fr;
-  margin: 1rem auto;
-  max-width: 90%;
+  margin: 24px;
+  max-width: 100%;
 `
 
 const FooterLayout = styled.footer`

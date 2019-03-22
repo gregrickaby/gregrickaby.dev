@@ -13,7 +13,7 @@ const PostTitle = styled.h1`
 `
 
 const ImageLayout = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 `
 
 const postContent = ({ className, content }) => (
