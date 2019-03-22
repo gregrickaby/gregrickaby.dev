@@ -4,11 +4,11 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
-  background: #111;
+  background: linear-gradient(0.38turn, #000, #250238);
   margin-bottom: 56px;
 
   h1 {
-    margin: 0 0 0.5rem;
+    margin: 0 0 10px;
   }
 
   p {
