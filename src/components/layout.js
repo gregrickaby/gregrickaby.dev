@@ -12,7 +12,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Sidebar from "./sidebar"
 import Footer from "./footer"
-import "./layout.css"
+import "../styles/main.scss"
 
 const Layout = ({ children, location }) => (
   <StaticQuery
