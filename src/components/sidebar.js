@@ -57,7 +57,7 @@ export default () => (
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <>
-        <AsideLayout>
+        <AsideLayout className="site-sidebar">
           <Widget>
             <h3>About</h3>
             <img

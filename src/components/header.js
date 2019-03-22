@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.header`
   background: linear-gradient(0.38turn, #000, #250238);
   margin-bottom: 56px;
 
@@ -20,7 +20,7 @@ const HeaderContainer = styled.div`
 `
 
 const Header = ({ siteTitle, siteDescription }) => (
-  <HeaderWrapper>
+  <HeaderWrapper className="site-footer">
     <HeaderContainer>
       <h1>
         <Link
