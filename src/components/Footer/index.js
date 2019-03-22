@@ -1,19 +1,5 @@
 import React from "react"
-import styled from "styled-components"
-
-const FooterLayout = styled.footer`
-  padding: 56px;
-
-  p,
-  a {
-    font-size: 16px;
-    transition: color 0.1s ease-in-out;
-  }
-
-  a:hover {
-    color: #ccc;
-  }
-`
+import { FooterLayout } from "./styles"
 
 const Footer = () => {
   return (

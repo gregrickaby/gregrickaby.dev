@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Sidebar from "./sidebar"
-import Footer from "./footer"
+import Footer from "./Footer/"
 import "../styles/main.scss"
 
 const Layout = ({ children, location }) => (
