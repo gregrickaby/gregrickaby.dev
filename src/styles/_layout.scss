@@ -9,6 +9,10 @@
     color: #fff;
     font-family: $font-sans-serif;
     grid-column: 1 / -1;
+
+    a {
+      color: #fff;
+    }
   }
 
   &-content {
