@@ -1,0 +1,19 @@
+.site {
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: 3fr 1fr;
+
+  &-header,
+  &-footer {
+    background: linear-gradient(0.38turn, #000, #250238);
+    color: #fff;
+    font-family: $font-sans-serif;
+    grid-column: 1 / -1;
+  }
+
+  &-content {
+  }
+
+  &-sidebar {
+  }
+}
