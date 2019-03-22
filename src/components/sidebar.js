@@ -13,17 +13,28 @@ const AsideLayout = styled.aside`
   color: #000c;
   font-size: 15px;
   line-height: 1rem;
+
+  a {
+    color: #bc0ce8;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: #250238;
+    }
+  }
 `
 
-const Widget = styled.div``
+const Widget = styled.div`
+  margin-bottom: 48px;
+`
 
 const Avatar = {
   borderRadius: "50%",
   height: "auto",
-  maxWidth: "70%",
+  maxWidth: "60%",
 }
 
-const Bio = styled.p``
+const Bio = styled.div``
 
 const ArchiveList = styled.ul`
   list-style: none;
@@ -54,8 +65,13 @@ export default () => (
               alt="Greg"
             />
             <Bio>
-              Director of Engineering at WebDevStudios. Author/Tech Editor "For
-              Dummies" brand under John Wiley & Sons, Inc.
+              <p>
+                Director of Engineering at WebDevStudios. Author/Tech Editor
+                "For Dummies" brand under John Wiley & Sons, Inc.
+              </p>
+              <a href="https://twitter.com/gregrickaby">Twitter</a> |{" "}
+              <a href="https://github.com/gregrickaby">Github</a> |{" "}
+              <a href="https://www.linkedin.com/in/gregrickaby">LinkedIn</a>
             </Bio>
           </Widget>
 
