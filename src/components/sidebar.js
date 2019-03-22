@@ -10,8 +10,9 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
 const AsideLayout = styled.aside`
-  font-family: sans-serif;
+  color: #000c;
   font-size: 15px;
+  line-height: 1rem;
 `
 
 const Widget = styled.div``
@@ -30,7 +31,12 @@ const ArchiveList = styled.ul`
   padding: 0;
 
   a {
-    color: #000000;
+    color: #000c;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: #111;
+    }
   }
 `
 
