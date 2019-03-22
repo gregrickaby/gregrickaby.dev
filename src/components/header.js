@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
   background: #111;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 
   h1 {
     margin: 0 0 0.5rem;

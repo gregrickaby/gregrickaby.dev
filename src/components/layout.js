@@ -24,7 +24,7 @@ const MainLayout = styled.main`
 
 const FooterLayout = styled.footer`
   background: #111;
-  padding: 48px;
+  padding: 56px;
   margin: 0 auto;
 
   p,
