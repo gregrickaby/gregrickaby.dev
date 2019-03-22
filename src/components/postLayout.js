@@ -9,7 +9,7 @@ const PostTitle = styled.h1`
   font-size: 46px;
   letter-spacing: 0;
   line-height: 1.25em;
-  margin-bottom: 48px;
+  margin: 0 0 48px;
 `
 
 const ImageLayout = styled.div`
@@ -26,9 +26,7 @@ const postContent = ({ className, content }) => (
 )
 
 const StyledContent = styled(postContent)`
-  padding: 20px;
-  max-width: 740px;
-  margin: 0 auto;
+  max-width: 700px;
 
   p,
   ul,
