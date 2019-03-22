@@ -1,16 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import styled from "styled-components"
-
-const HeaderWrapper = styled.header`
-  h1 {
-    margin: 0 0 10px;
-  }
-`
-const HeaderContainer = styled.div`
-  padding: 48px;
-`
+import { HeaderWrapper, HeaderContainer } from "./styles"
 
 const Header = ({ siteTitle, siteDescription }) => (
   <HeaderWrapper className="site-header">
