@@ -4,15 +4,8 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.header`
-  background: linear-gradient(0.38turn, #000, #250238);
-  margin-bottom: 56px;
-
   h1 {
     margin: 0 0 10px;
-  }
-
-  p {
-    color: #fff;
   }
 `
 const HeaderContainer = styled.div`
@@ -20,7 +13,7 @@ const HeaderContainer = styled.div`
 `
 
 const Header = ({ siteTitle, siteDescription }) => (
-  <HeaderWrapper className="site-footer">
+  <HeaderWrapper className="site-header">
     <HeaderContainer>
       <h1>
         <Link

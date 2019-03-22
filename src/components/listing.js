@@ -34,7 +34,6 @@ const Post = styled.article`
 
   .read-more {
     color: #bc0ce8;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
     text-decoration: underline;
     transition: color 0.1s ease-in-out;

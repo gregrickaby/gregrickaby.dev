@@ -2,15 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterLayout = styled.footer`
-  background: linear-gradient(0.38turn, #000, #250238);
   padding: 56px;
-  margin: 0 auto;
 
   p,
   a {
-    color: #fff;
     font-size: 16px;
-    font-family: sans-serif;
     transition: color 0.1s ease-in-out;
   }
 
