@@ -26,6 +26,7 @@ const postContent = ({ className, content }) => (
 )
 
 const StyledContent = styled(postContent)`
+  margin: 0 auto;
   max-width: 700px;
 
   p,
@@ -43,26 +44,22 @@ const StyledContent = styled(postContent)`
   }
 
   a {
-    color: #000299cc;
+    color: #bc0ce8;
     transition: color 0.1s ease-in-out;
 
     &:hover {
-      color: #000c;
+      color: #250238;
     }
   }
 
   blockquote {
-    background: linear-gradient(
-      0.38turn,
-      rgb(248, 248, 248) 0%,
-      rgb(255, 255, 255) 100%
-    );
+    background: linear-gradient(0.38turn, #bc0ce8, #250238);
     padding: 24px 24px 24px 60px;
-    margin-left: -64px;
-    width: calc(100% + 128px);
+    margin-left: -95px;
+    width: calc(100% + 190px);
 
     p {
-      color: #000000b3;
+      color: #fff;
       font-size: 26px;
       letter-spacing: -0.012em;
       line-height: 1.48;
