@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "markdown.extension.preview.autoShowPreviewToSide": false,
+    "eslint.options": {
+      "maxWarnings": "500",
+      "ignorePattern": ["/node_modules/*", "*.min.js"]
+    },
+    "eslint.autoFixOnSave": false,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    }
+  }
+}
