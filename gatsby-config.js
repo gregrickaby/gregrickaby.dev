@@ -52,6 +52,7 @@ module.exports = {
         icon: `src/images/grd-logo.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
