@@ -1,8 +1,8 @@
 import React from "react"
-import { ContactForm } from "./styles"
+import { ContactLayout } from "./styles"
 
 const ContactForm = props => (
-  <ContactForm>
+  <ContactLayout>
     <form
       name="contact"
       method="post"
@@ -31,7 +31,7 @@ const ContactForm = props => (
         </li>
       </ul>
     </form>
-  </ContactForm>
+  </ContactLayout>
 )
 
 export default ContactForm

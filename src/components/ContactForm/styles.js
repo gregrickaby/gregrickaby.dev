@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ContactForm = styled.div`
+export const ContactLayout = styled.div`
   padding: 56px;
 
   p,
