@@ -45,8 +45,11 @@ const Experiment = ({ location }) => (
     />
     <h2>Testing Results</h2>
     <p>
-      The normal front-end audit tools are 👍🏻 with using interactive resizing.
-      See the results below.
+      The normal front-end audit tools are{" "}
+      <span role="img" aria-label="thumbs up">
+        👍🏻
+      </span>{" "}
+      with using interactive resizing. See the results below.
     </p>
     <ul>
       <li>
