@@ -24,6 +24,7 @@ const ContactForm = props => (
       <div className="field submit">
         <input type="submit" value="Send Message" />
       </div>
+      <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
     </form>
   </ContactLayout>
