@@ -3,6 +3,9 @@ import { ContactLayout } from "./styles"
 
 const ContactForm = props => (
   <ContactLayout>
+    <p>
+      Want to get in touch? Drop me a note and I'll get back with you, ASAP.
+    </p>
     <form
       name="contact"
       method="post"
