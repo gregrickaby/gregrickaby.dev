@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Modern development blog`,
-    description: `A journey away from WordPress`,
+    description: `My experience learning JavaScript based web tech`,
     author: `@gregrickaby`,
     siteUrl: `https://gregrickaby.dev/`,
   },
@@ -49,7 +49,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/grd-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
