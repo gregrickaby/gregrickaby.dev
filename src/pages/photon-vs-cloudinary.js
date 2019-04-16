@@ -10,36 +10,38 @@ const Experiment = ({ location }) => (
 
     <p>
       <a href="https://developer.wordpress.com/docs/photon/api/">Photon</a>{" "}
-      image below. Using interactive resizing via query string.
+      image below. Using interactive resizing via query string to fit a very
+      large image, into the column width on this page.
     </p>
     <p>
       {" "}
       <code>
-        https://i0.wp.com/ma.tt/files/2014/09/8084136238_169f1ca1f0_o.jpg?w=1920&h=1080
+        https://i0.wp.com/ma.tt/files/2014/09/8084136238_169f1ca1f0_o.jpg?w=881&h=496
       </code>
     </p>
     <img
-      src="https://i0.wp.com/ma.tt/files/2014/09/8084136238_169f1ca1f0_o.jpg?w=1920&h=1080"
+      src="https://i0.wp.com/ma.tt/files/2014/09/8084136238_169f1ca1f0_o.jpg?w=881&h=496"
       alt="Photon"
-      height="1080"
-      width="1920"
+      height="496"
+      width="881"
     />
 
     <p>
       <a href="https://demo.cloudinary.com/default">Cloudinary</a> image below.
-      Using interactive resizing via query string.
+      Using interactive resizing via query string to fit a very large image,
+      into the column width on this page.
     </p>
     <p>
       {" "}
       <code>
-        https://res.cloudinary.com/idemo/image/upload/h_1080,w_1920/sofa_cat.jpg
+        https://res.cloudinary.com/idemo/image/upload/h_496,w_881/sofa_cat.jpg
       </code>
     </p>
     <img
-      src="https://res.cloudinary.com/idemo/image/upload/h_1080,w_1920/sofa_cat.jpg"
+      src="https://res.cloudinary.com/idemo/image/upload/h_496,w_881/sofa_cat.jpg"
       alt="Cloudinary"
-      height="1080"
-      width="1920"
+      height="496"
+      width="881"
     />
     <h2>Testing Results</h2>
   </Layout>
