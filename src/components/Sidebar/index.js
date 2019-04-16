@@ -12,13 +12,13 @@ export default () => (
             <h3>About</h3>
             <img
               style={Avatar}
-              src="https://avatars3.githubusercontent.com/u/200280?s=460&v=4"
+              src="https://avatars3.githubusercontent.com/u/200280?s=195&v=4"
               alt="Greg"
             />
             <Bio>
               <p>
-                Director of Engineering at WebDevStudios. Author/Tech Editor
-                "For Dummies" brand under John Wiley & Sons, Inc.
+                Director of Engineering @WebDevStudios / Author & Tech Editor
+                for @fordummies / @gatsbyjs Maintainer
               </p>
               <a href="https://twitter.com/gregrickaby">Twitter</a> |{" "}
               <a href="https://github.com/gregrickaby">Github</a> |{" "}
