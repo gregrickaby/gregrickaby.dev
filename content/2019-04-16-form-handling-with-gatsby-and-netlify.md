@@ -54,3 +54,5 @@ Here is the working version, with HTML5 validation:
    <input type="hidden" name="bot-field" />
 </form>
 ```
+
+Check out my entire solution [on Github](https://github.com/gregrickaby/gregrickaby.dev/blob/338e5d803c32ca6fcd38f78df776013c1a56b01e/src/components/ContactForm/index.js).
