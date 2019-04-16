@@ -44,6 +44,27 @@ const Experiment = ({ location }) => (
       width="881"
     />
     <h2>Testing Results</h2>
+    <p>
+      The normal front-end audit tools are 👍🏻 with using interactive resizing.
+      See the results below.
+    </p>
+    <ul>
+      <li>
+        <a href="https://webspeedtest.cloudinary.com/results/190416_NX_5746c13ba02029fbfed745e302352ee1">
+          Cloudinary
+        </a>
+      </li>
+      <li>
+        <a href="https://www.webpagetest.org/result/190416_2A_e549e203ad05c3dc1f4bb905433c4cec/">
+          WebPageTest
+        </a>
+      </li>
+      <li>
+        <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fgregrickaby.dev%2Fphoton-vs-cloudinary%2F&tab=desktop">
+          PageSpeed
+        </a>
+      </li>
+    </ul>
   </Layout>
 )
 
