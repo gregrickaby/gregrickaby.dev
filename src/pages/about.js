@@ -10,14 +10,16 @@ const About = ({ location, data }) => (
     <SEO title="About Greg" />
     <h1>About</h1>
     <p>
-      I’m the Director of Engineering at WebDevStudios, where we build amazing
-      digital platforms for large and enterprise level businesses.
+      Hello! I’m the Director of Engineering at{" "}
+      <a href="https://webdevstudios.com">WebDevStudios</a>, where we build
+      amazing digital platforms for large and enterprise level businesses.
     </p>
-    <Img
-      className="align-right"
-      alt="The Rickaby Family"
-      fixed={data.familyImage.childImageSharp.fixed}
-    />
+    <div style={{ float: `right`, marginLeft: `12px` }}>
+      <Img
+        alt="The Rickaby Family"
+        fixed={data.familyImage.childImageSharp.fixed}
+      />
+    </div>
     <p>
       While at WebDevStudios, my engineers and I work with clients like
       Microsoft Office, Viacom, NBA, MTV News, Paramount Network, Uber, Skype,
@@ -45,8 +47,8 @@ const About = ({ location, data }) => (
       known to make delicious pizzas.
     </p>
     <p>
-      If you’re looking to hire or retain an experienced web developer?{" "}
-      <Link to="/contact"> am available.</Link>
+      If you’re looking to hire or retain an experienced web developer? I am{" "}
+      <Link to="/contact">available.</Link>
     </p>
     <p>
       My services include hosting, server management, plugin development, PSD
