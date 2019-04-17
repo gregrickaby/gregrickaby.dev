@@ -18,7 +18,16 @@
   &-content {
     padding: 48px;
   }
+}
 
-  &-sidebar {
-  }
+.align-right {
+  float: right;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+.align-left {
+  float: left;
+  margin-bottom: 24px;
+  margin-right: 24px;
 }
