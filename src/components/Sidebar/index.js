@@ -20,9 +20,9 @@ export default () => (
                 Director of Engineering @WebDevStudios / Author & Tech Editor
                 for @fordummies / @gatsbyjs Maintainer
               </p>
-              <a href="https://twitter.com/gregrickaby">Twitter</a> |{" "}
               <a href="https://github.com/gregrickaby">Github</a> |{" "}
-              <a href="https://www.linkedin.com/in/gregrickaby">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/gregrickaby">LinkedIn</a> |{" "}
+              <a href="https://twitter.com/gregrickaby">Twitter</a>
             </Bio>
           </Widget>
 
