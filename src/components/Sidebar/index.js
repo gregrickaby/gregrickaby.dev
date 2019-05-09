@@ -1,13 +1,13 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import { AsideLayout, Widget, Bio, Avatar, ArchiveList } from "./styles"
+import { Widget, Bio, Avatar, ArchiveList } from "./styles"
 
 export default () => (
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <>
-        <AsideLayout className="site-sidebar">
+        <aside className="site-sidebar">
           <Widget>
             <h3>About</h3>
             <img
@@ -38,7 +38,7 @@ export default () => (
               ))}
             </ArchiveList>
           </Widget>
-        </AsideLayout>
+        </aside>
       </>
     )}
   />

@@ -1,26 +1,5 @@
 import styled from "styled-components"
 
-export const AsideLayout = styled.aside`
-  margin-top: 36px;
-  color: #000c;
-  font-size: 15px;
-  line-height: 1.3;
-  text-align: center;
-
-  @media screen and (min-width: 1024px) {
-    text-align: left;
-  }
-
-  a {
-    color: #bc0ce8;
-    transition: color 0.1s ease-in-out;
-
-    &:hover {
-      color: #250238;
-    }
-  }
-`
-
 export const Widget = styled.div`
   margin-bottom: 48px;
 `
