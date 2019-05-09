@@ -5,6 +5,11 @@ export const AsideLayout = styled.aside`
   color: #000c;
   font-size: 15px;
   line-height: 1.3;
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
 
   a {
     color: #bc0ce8;
