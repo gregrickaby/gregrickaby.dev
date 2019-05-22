@@ -1,9 +1,9 @@
 {
   "name": "gregrickaby.dev",
   "private": true,
-  "description": "My development blog.",
+  "description": "My experience learning JavaScript based web tech.",
   "version": "0.1.0",
-  "author": "Greg Rickaby <gregrickaby@gmail.com>",
+  "author": "Greg Rickaby <greg@gregrickaby.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.6.3",
