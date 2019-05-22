@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Modern development blog`,
-    description: `My experience learning JavaScript based web tech`,
+    description: `My experience learning JavaScript based web tech.`,
     author: `@gregrickaby`,
     siteUrl: `https://gregrickaby.dev/`,
   },
@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/content/`,
+        path: `${__dirname}/static/content/`,
       },
     },
     {
