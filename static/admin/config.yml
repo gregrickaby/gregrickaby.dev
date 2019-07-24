@@ -3,7 +3,7 @@
 backend:
   name: github
   branch: master # Branch to update (defaults to master)
-  repo: gregrickaby/gregrickaby.dev
+  repo: gregrickaby/gregrickaby-dev
 
 publish_mode: editorial_workflow # Adds an interface for drafting, reviewing, and approving posts.
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
