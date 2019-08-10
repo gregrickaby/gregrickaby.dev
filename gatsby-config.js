@@ -134,6 +134,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-12345-6",
+        head: true,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "gregrickaby.dev",
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-netlify`,
