@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { ThemeProvider } from "theme-ui"
+import theme from "../gatsby-plugin-theme-ui/"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
-import "../styles/main.scss"
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -19,7 +20,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={data => (
-      <>
+      <ThemeProvider theme={theme}>
         <div className="site">
           <Header
             siteTitle={data.site.siteMetadata.title}
@@ -29,7 +30,7 @@ const Layout = ({ children, location }) => (
           <Sidebar />
           <Footer />
         </div>
-      </>
+      </ThemeProvider>
     )}
   />
 )
