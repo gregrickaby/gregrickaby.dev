@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/Seo"
-import River from "../components/River"
+import SEO from "../components/seo"
+import River from "../components/river"
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>

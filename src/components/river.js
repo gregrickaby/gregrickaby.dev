@@ -1,13 +1,12 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-import { River } from "./styles"
 
 const Listing = () => (
   <StaticQuery
     query={LISTING_QUERY}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(({ node }) => (
-        <River key={node.fields.slug}>
+        <div key={node.fields.slug}>
           <Link to={`/posts${node.fields.slug}`}>
             <h2>{node.frontmatter.title}</h2>
           </Link>
@@ -16,7 +15,7 @@ const Listing = () => (
           <Link className="read-more" to={`/posts${node.fields.slug}`}>
             Read More
           </Link>
-        </River>
+        </div>
       ))
     }
   />

@@ -1,8 +1,7 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../layout"
-import { PostTitle, ImageLayout, StyledContent } from "./styles"
+import Layout from "../components/layout"
 
 class postLayout extends Component {
   render() {
@@ -10,13 +9,11 @@ class postLayout extends Component {
     const { location } = this.props
     return (
       <Layout location={location}>
-        <PostTitle>{markdownRemark.frontmatter.title}</PostTitle>
-        <ImageLayout>
-          <Img
-            fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
-          />
-        </ImageLayout>
-        <StyledContent content={markdownRemark.html} />
+        <h1>{markdownRemark.frontmatter.title}</h1>
+        <Img
+          fluid={markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
+        />
+        <div>{markdownRemark.html}</div>
       </Layout>
     )
   }

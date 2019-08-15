@@ -1,21 +1,19 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import { Widget, Bio, Avatar, ArchiveList } from "./styles"
 
-export default () => (
+const Sidebar = () => (
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <>
-        <aside className="site-sidebar">
-          <Widget>
+        <aside>
+          <div>
             <h3>About</h3>
             <img
-              style={Avatar}
               src="https://avatars3.githubusercontent.com/u/200280?s=195&v=4"
               alt="Greg"
             />
-            <Bio>
+            <div>
               <p>
                 Director of Engineering @WebDevStudios / Author & Tech Editor
                 for @fordummies / @gatsbyjs Maintainer
@@ -23,12 +21,12 @@ export default () => (
               <a href="https://github.com/gregrickaby">Github</a> |{" "}
               <a href="https://www.linkedin.com/in/gregrickaby">LinkedIn</a> |{" "}
               <a href="https://twitter.com/gregrickaby">Twitter</a>
-            </Bio>
-          </Widget>
+            </div>
+          </div>
 
-          <Widget>
+          <div>
             <h3>Archive</h3>
-            <ArchiveList>
+            <div>
               {allMarkdownRemark.edges.map(edge => (
                 <li key={edge.node.fields.slug}>
                   <Link to={`/posts${edge.node.fields.slug}`}>
@@ -36,8 +34,8 @@ export default () => (
                   </Link>
                 </li>
               ))}
-            </ArchiveList>
-          </Widget>
+            </div>
+          </div>
         </aside>
       </>
     )}
@@ -64,3 +62,5 @@ const POST_ARCHIVE_QUERY = graphql`
     }
   }
 `
+
+export default Sidebar

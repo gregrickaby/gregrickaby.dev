@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 
 const About = ({ location, data }) => (
   <Layout location={location}>

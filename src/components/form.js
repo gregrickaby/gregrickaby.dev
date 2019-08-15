@@ -1,8 +1,7 @@
 import React from "react"
-import { ContactLayout } from "./styles"
 
-const ContactForm = props => (
-  <ContactLayout>
+const Form = () => (
+  <>
     <p>
       Want to get in touch? Drop me a note and I'll get back with you, ASAP.
     </p>
@@ -46,7 +45,7 @@ const ContactForm = props => (
       <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
     </form>
-  </ContactLayout>
+  </>
 )
 
-export default ContactForm
+export default Form

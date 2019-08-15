@@ -1,9 +1,8 @@
-import { Link } from "gatsby"
 import React from "react"
-import { MenuLayout } from "./styles"
+import { Link } from "gatsby"
 
-const Menu = props => (
-  <MenuLayout>
+const Menu = () => (
+  <>
     <ul>
       <li>
         <Link to="/">Home</Link>
@@ -15,7 +14,7 @@ const Menu = props => (
         <Link to="/contact">Contact</Link>
       </li>
     </ul>
-  </MenuLayout>
+  </>
 )
 
 export default Menu
